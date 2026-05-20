@@ -2595,46 +2595,47 @@ Sources: PNet client cohort 2023 to 2025 &nbsp;·&nbsp; PitchBook AI exit multip
         </div>
       </div>
 
-      <form class="cta-card" onsubmit="event.preventDefault(); alert('Thanks. We will be in touch within 24 hours.'); this.reset();">
-        <div class="cta-card-header">
-          <div class="cta-card-title">Discovery Request</div>
-          <div class="cta-card-status"><span class="dot"></span>ACCEPTING</div>
-        </div>
-        <div class="form-grid2">
-          <div class="form-row">
-            <label>First Name</label>
-            <input type="text" placeholder="Jane" required>
-          </div>
-          <div class="form-row">
-            <label>Last Name</label>
-            <input type="text" placeholder="Smith" required>
-          </div>
-        </div>
-        <div class="form-row">
-          <label>Work Email</label>
-          <input type="email" placeholder="jane@company.com" required>
-        </div>
-        <div class="form-grid2">
-          <div class="form-row">
-            <label>Company</label>
-            <input type="text" placeholder="Acme Corp">
-          </div>
-          <div class="form-row">
-            <label>Stage</label>
-            <select>
-              <option>Growth-stage</option>
-              <option>Enterprise</option>
-              <option>Mid-market</option>
-              <option>Federal / Public Sector</option>
-            </select>
-          </div>
-        </div>
-        <div class="form-row">
-          <label>What do you want AI to solve?</label>
-          <textarea placeholder="One or two sentences. What is the bottleneck?"></textarea>
-        </div>
-        <button type="submit" class="submit-btn">Request Discovery Call <span>→</span></button>
-      </form>
+      <form class="cta-card" action="https://formspree.io/f/mlgvjbbr" method="POST">
+  <div class="cta-card-header">
+    <div class="cta-card-title">Discovery Request</div>
+    <div class="cta-card-status"><span class="dot"></span>ACCEPTING</div>
+  </div>
+  <div class="form-grid2">
+    <div class="form-row">
+      <label>First Name</label>
+      <input type="text" name="firstName" placeholder="Jane" required>
+    </div>
+    <div class="form-row">
+      <label>Last Name</label>
+      <input type="text" name="lastName" placeholder="Smith" required>
+    </div>
+  </div>
+  <div class="form-row">
+    <label>Work Email</label>
+    <input type="email" name="email" placeholder="jane@company.com" required>
+  </div>
+  <div class="form-grid2">
+    <div class="form-row">
+      <label>Company</label>
+      <input type="text" name="company" placeholder="Acme Corp">
+    </div>
+    <div class="form-row">
+      <label>Stage</label>
+      <select name="stage">
+        <option>Growth-stage</option>
+        <option>Enterprise</option>
+        <option>Mid-market</option>
+        <option>Federal / Public Sector</option>
+      </select>
+    </div>
+  </div>
+  <div class="form-row">
+    <label>What do you want AI to solve?</label>
+    <textarea name="message" placeholder="One or two sentences. What is the bottleneck?"></textarea>
+  </div>
+  <input type="hidden" name="_subject" value="New Discovery Request — performancenet.ai">
+  <button type="submit" class="submit-btn">Request Discovery Call <span>→</span></button>
+</form>
     </div>
   </div>
 </section>
